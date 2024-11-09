@@ -4,7 +4,13 @@ namespace MVCApplication.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
+        {
+            return View();
+
+        }
+
+        public string IndexStranica()
         {
             return "This is the index page";
         }
